@@ -1,0 +1,17 @@
+FROM /home/dev/Desktop/IA-2026/OLLama/Gemma-Kimu-9b-it/Gemma-Kimu-9b-it-Q5_K_M.gguf
+
+PARAMETER num_ctx 8192
+PARAMETER temperature 0.7
+
+PARAMETER stop "</s>"
+PARAMETER stop "<end_of_turn>"
+PARAMETER stop "<eos>"
+
+TEMPLATE """{{ if .System }}<start_of_turn>user
+{{ .System }}<end_of_turn>
+{{ end }}{{ range .Messages }}{{ if eq .Role "user" }}<start_of_turn>user
+{{ .Content }}<end_of_turn>
+{{ else if eq .Role "assistant" }}<start_of_turn>model
+{{ .Content }}<end_of_turn>
+{{ end }}{{ end }}<start_of_turn>model
+"""

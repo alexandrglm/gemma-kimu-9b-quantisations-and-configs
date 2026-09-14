@@ -18,8 +18,8 @@ Steps, settings, and issues encountered when adapting [**orai-nlp/Gemma-Kimu-9b-
 
 | Quant    | Fits in 6 GB? | Notes                     |
 | -------- | ------------- | ------------------------- |
-| Q5_K_M   | ❌            | Exceeds VRAM              |
-| Q5_K_S   | ❌            | Exceeds VRAM              |
+| Q5_K_M   | ✅            | **Tested**. Works VERY well with OpenWebUI-ollama |
+| Q5_K_S   | ✅            | **Tested**. Works VERY well with OpenWebUI-ollama |
 | Q4_K_M   | ✅            | **Used**. Works VERY well |
 | Q4_K_S   | ✅            | Alternative               |
 
@@ -140,8 +140,8 @@ It is only a temporal, staging artefact; the real model will be the quantised on
 
 | Quant    | Approx. size (9B) | Fits in 6 GB? | Notes                     |
 | -------- | ----------------- | ------------- | ------------------------- |
-| Q5_K_M   | ~6.5 GB           | ❌            | Exceeds VRAM              |
-| Q5_K_S   | ~6.1 GB           | ❌            | Exceeds VRAM              |
+| Q5_K_M   | ~6.5 GB           | ✅            | **Tested**. Works VERY well with OpenWebUI-ollama |
+| Q5_K_S   | ~6.1 GB           | ✅            | **Tested**. Works VERY well with OpenWebUI-ollama |
 | Q4_K_M   | ~5.5 GB           | ✅            | **Used**. Works very well |
 | Q4_K_S   | ~5.2 GB           | ✅            | Alternative, slightly smaller |
 
