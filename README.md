@@ -289,7 +289,7 @@ this is probably a bug in the model. its type will be overridden
 - **Impact:** `llama.cpp` overrides it, but **the model might not stop on its own**.
 
 - **Solution:** add `</s>` to the `stop` list of every request and/or to the Modelfile.
-- **It's a cosmetic bug sourced in the original tokenizer**.
+- **It's a cosmetic bug sourced in the original tokeniserr**.
 
 
 
